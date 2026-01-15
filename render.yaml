@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: jk-evac-backend
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: bash backend/start.sh
+    autoDeploy: true
+
